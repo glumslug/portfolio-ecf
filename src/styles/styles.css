@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  align-items: center;
+}
+.header h2 {
+  font-size: 4em;
+  color: #99ff99;
+}
+.header h3 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.header .btn {
+  display: inline-block;
+  background: #6ccf6c;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: white;
+}
+
+html {
+  min-height: 100%;
+}
+html body {
+  padding: 0 10px;
+  background: radial-gradient(at top left, grey 0%, black 100%);
+  background-repeat: no-repeat;
+}
+
+p {
+  margin: 16px auto;
+  line-height: 1.5em;
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px auto;
+}
+nav .links {
+  display: inline-block;
+  text-align: right;
+  padding: 5px;
+}
+nav a {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+}
+nav a:hover {
+  border-color: white;
+}
+
+footer p {
+  text-align: center;
+  color: rgb(170, 170, 170);
+  margin: 40px auto;
+}/*# sourceMappingURL=styles.css.map */
