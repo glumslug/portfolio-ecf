@@ -7,4 +7,9 @@
 module.exports = {
   /* Your site config here */
   plugins: [`gatsby-plugin-sass`],
+  siteMetadata: {
+    title: "Eli Ferster Web Development",
+    description: "web dev portfolio",
+    copyright: "This website is copyright 2022 Eli Codes",
+  },
 }

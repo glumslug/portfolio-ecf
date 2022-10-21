@@ -2,21 +2,27 @@ import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 
-const About = () => {
+const Home = () => {
   return (
     <Layout>
-      <section className="header">
-        <div>
-          <h2>Design</h2>
-          <h3>Develop & Deploy</h3>
-          <p>UX designer & web developer based in DC</p>
+      <section className="hero">
+        <h2>Eli Ferster</h2>
+        <h1>Full-Stack Developer</h1>
+        <h3>ReactJS MERN stack experienced.</h3>
+        <div className="socials">
           <Link className="btn" to="/projects">
-            My Projects
+            Resume
           </Link>
+          <Link className="btn" to="/projects">
+            Projects
+          </Link>
+          <img src="/github.svg" alt="" />
+          <img src="/linkedin.svg" alt="" />
         </div>
+        {/* </div> */}
       </section>
     </Layout>
   )
 }
 
-export default About
+export default Home

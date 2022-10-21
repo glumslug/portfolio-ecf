@@ -1,24 +1,103 @@
-.header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-  align-items: center;
+.hero {
+  // padding-bottom: 7rem;
+  // height: 100%;
+  align-items: start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    background-image: linear-gradient(90deg, #b0f3f1, #dae7f7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    letter-spacing: -0.03em;
+    font-family: Mark Pro, sans-serif;
+    animation: fade-down 1s linear;
+  }
   h2 {
-    font-size: 4em;
-    color: #99ff99;
+    font-size: 2.5em;
+    font-weight: 400;
+    background: linear-gradient(90deg, transparent, white 0%);
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-clip: text;
+    color: transparent;
+    animation: shine-in 1.2s ease-in;
+
+    text-align: start;
   }
   h3 {
-    font-size: 3em;
-    font-weight: 400;
-    margin-bottom: 20px;
+    animation: shine-in 1.2s ease-in;
   }
+  .socials {
+    animation: fade-up-delay 2s;
+  }
+}
+.socials {
+  display: flex;
+  align-items: center;
 
   .btn {
     display: inline-block;
-    background: #6ccf6c;
+    background: #649d73;
+
     padding: 10px 16px;
-    border-radius: 10px;
+    border-radius: 7px;
     margin-top: 20px;
+    margin-right: 20px;
     font-weight: 500;
+    height: 1.2rem;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  img {
+    height: 2.3rem;
+    margin-right: 20px;
+    margin-top: 20px;
+    filter: invert(59%) sepia(41%) saturate(314%) hue-rotate(84deg)
+      brightness(87%) contrast(95%);
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    margin-left: 2rem;
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes fade-up-delay {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes shine-in {
+  0% {
+    opacity: 0;
+    background-position: 200%;
+  }
+
+  100% {
+    opacity: 1;
+    background-position: 0%;
   }
 }

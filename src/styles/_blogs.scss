@@ -1,0 +1,107 @@
+.project-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+@media (max-width: 500px) {
+  .blog-hero {
+    margin-top: 10rem;
+  }
+}
+
+.projects {
+  margin: 10px;
+  // animation: fade-up-delay 3s;
+  display: flex;
+  flex-wrap: wrap;
+  width: 2rem;
+  flex-direction: column;
+  align-self: start;
+  margin-left: -1.8%;
+  margin-top: 1rem;
+
+  input {
+    display: none;
+  }
+  input:checked + label + .tab {
+    opacity: 1;
+  }
+  input:checked + label {
+    color: white;
+  }
+  label {
+    cursor: pointer;
+    padding: 0.5rem;
+    color: rgb(104, 104, 203);
+  }
+  .tab {
+    opacity: 0;
+    text-align: justify;
+    transition: 0.4s;
+    padding: 0.5rem 0;
+    position: absolute;
+    width: 62%;
+    transform: translateX(5rem);
+    h4 {
+      padding-bottom: 1rem;
+    }
+    p {
+      padding-bottom: 0.7rem;
+    }
+  }
+}
+
+.cta {
+  transform: translateY(100%);
+  display: flex;
+  align-items: center;
+  .call {
+    background-color: grey;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+
+    a {
+      color: rgb(237, 136, 136);
+      cursor: pointer;
+    }
+  }
+  .instructions {
+    opacity: 0;
+    transition: 0.04s;
+    background-color: rgba(197, 183, 183, 0.443);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+@media (min-width: 600px) {
+  .projects {
+    margin-left: -1.1%;
+  }
+}
+
+@media (min-width: 800px) {
+  .projects {
+    margin-left: -1.1%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects {
+    margin-left: -0.8%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects {
+  }
+}
