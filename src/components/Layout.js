@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
       <Navbar />
       <div className="content">{children}</div>
       <footer>
-        <p>&copy; Copyright 2022 Eli Codes</p>
+        <p>&copy; Copyright 2022 Eli Ferster</p>
       </footer>
     </div>
   )

@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Layout>
       <div className="about">
-        <h1>About</h1>
+        <h1>Bio</h1>
 
         <h2>Full-stack web developer</h2>
 

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import "./home";
 @import "./variables";
-@import "./blogs";
+@import "./portfolio";
 @import "./navbar";
 @import "./about";
 * {
@@ -28,16 +28,17 @@ body {
   flex-direction: column;
   // justify-content: space-between;
 
-  padding: 0 2rem;
+  padding: 0 1rem;
   align-items: center;
 
   .content {
     height: 100%;
     width: 100%;
     display: flex;
+
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
     overflow: hidden;
   }
 }
