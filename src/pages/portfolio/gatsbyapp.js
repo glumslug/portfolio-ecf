@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../../components/Layout"
 import { Link } from "gatsby"
+import back from "../../images/circle-left-regular.svg"
 
 const GatsbySite = () => {
   return (
@@ -8,7 +9,7 @@ const GatsbySite = () => {
       <div className="portfolio">
         <div className="title-card">
           <Link to="/portfolio">
-            <img src="/circle-left-regular.svg" alt="" />
+            <img src={back} alt="" />
           </Link>
           <h3>Gatsby Personal Site </h3>
         </div>

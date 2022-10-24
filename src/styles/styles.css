@@ -510,8 +510,7 @@ input:checked ~ .links a {
           animation: shine-in 2s ease-in;
   width: 100%;
   margin-top: 5px;
-  padding-top: 15px;
-  border-top: 2px solid #6fbbdb;
+  padding-top: 3rem;
   display: flex;
   justify-content: center;
 }
@@ -528,7 +527,6 @@ input:checked ~ .links a {
   line-height: 1.7rem;
 }
 .bio h3 {
-  border-bottom: 2px solid #6fbbdb;
   color: rgb(214, 214, 214);
   width: 100%;
   text-align: center;
@@ -554,7 +552,11 @@ input:checked ~ .links a {
   grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
   width: 100%;
-  padding: 20px 4px;
+  padding: 2px 4px;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 2px solid #6fbbdb;
+  border-bottom: 2px solid #6fbbdb;
 }
 .bio ul li {
   padding: 0 1px;
@@ -639,6 +641,9 @@ input:checked ~ .links a {
 @media (max-width: 500px) {
   .bio {
     margin-top: 5%;
+  }
+  .bio ul {
+    grid-template-columns: 0.95fr 0.95fr 1.05fr;
   }
   .portfolio {
     margin-top: -7%;

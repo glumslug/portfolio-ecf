@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { Link } from "gatsby"
+import github from "../images/github.svg"
+import linkedin from "../images/linkedin.svg"
 
 export default function About() {
   return (
@@ -48,10 +50,10 @@ export default function About() {
             target="_blank"
             href="https://www.linkedin.com/in/eli-ferster-5a7238141/"
           >
-            <img src="/linkedin.svg" alt="" />
+            <img src={linkedin} alt="" />
           </a>
           <a href="https://github.com/glumslug" target="_blank">
-            <img src="/github.svg" alt="" />
+            <img src={github} alt="" />
           </a>
         </div>
         <h4 className="email">eli.c.ferster@gmail.com</h4>
