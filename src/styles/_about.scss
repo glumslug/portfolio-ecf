@@ -35,8 +35,35 @@
 }
 .portfolio {
   @extend .about;
+  width: 100%;
   align-items: start;
+  // background-color: green;
+  .title-card {
+    // background-color: red;
+    display: flex;
+    width: 100%;
+    // justify-content: space-between;
+    align-items: center;
+    // padding-bottom: 3px;
 
+    animation: fade-up-delay 1.5s;
+    h3 {
+      padding-bottom: 3px;
+      border-bottom: 2px lightblue solid;
+      width: 90%;
+    }
+    img {
+      margin: 6px 2.6rem 0 0.5rem;
+      height: 1.4rem;
+      filter: invert(90%) sepia(13%) saturate(205%) hue-rotate(159deg)
+        brightness(91%) contrast(89%);
+      cursor: pointer;
+      color: #c2cfd7;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
   // background-color: green;
 }
 
@@ -45,6 +72,9 @@
   align-items: start;
   // background-color: red;
   margin-top: 0%;
+  h3 {
+    animation: shine-in 1.3s ease-in;
+  }
 }
 .bio {
   @extend .about;
@@ -54,6 +84,8 @@
     margin-top: 5px;
     padding-top: 15px;
     border-top: 2px solid #6fbbdb;
+    display: flex;
+    justify-content: center;
     .btn {
       margin-right: 1.2rem;
     }
@@ -67,7 +99,7 @@
     line-height: 1.7rem;
   }
   h3 {
-    border-top: 2px solid #6fbbdb;
+    // border-top: 2px solid #6fbbdb;
     border-bottom: 2px solid #6fbbdb;
     color: rgb(214, 214, 214);
     width: 100%;
@@ -187,6 +219,12 @@
   .bio {
     margin-top: 5%;
   }
+  .portfolio {
+    margin-top: -7%;
+  }
+  .hero {
+    margin-top: -10%;
+  }
 }
 @media (min-width: 600px) {
   .about {
@@ -197,6 +235,17 @@
       li {
         padding-left: 5px;
       }
+    }
+  }
+  .bio {
+    h3 {
+      text-align: start;
+    }
+    .email {
+      transform: translate(23rem, -2.6rem);
+    }
+    .socials {
+      justify-content: start;
     }
   }
 

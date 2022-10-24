@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <Layout>
       <section className="hero">
-        <img src="headshot2.png" alt="" />
+        {/* <img src="headshot2.png" alt="" /> */}
         <h2>Eli Ferster</h2>
         <h1>Full-Stack Developer</h1>
         <div className="socials">

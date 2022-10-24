@@ -6,11 +6,12 @@ const GatsbySite = () => {
   return (
     <Layout>
       <div className="portfolio">
-        <Link to="/portfolio">
-          <h2>Portfolio</h2>
-        </Link>
-
-        <h3>Gatsby Personal Site </h3>
+        <div className="title-card">
+          <Link to="/portfolio">
+            <img src="/circle-left-regular.svg" alt="" />
+          </Link>
+          <h3>Gatsby Personal Site </h3>
+        </div>
 
         <div className="project">
           <input type="radio" id="tab1" name="project" defaultChecked />

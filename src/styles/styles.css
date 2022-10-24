@@ -1,13 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 h1 {
-  background-image: linear-gradient(90deg, #6fbbdb, #97b9e4);
+  background-image: linear-gradient(90deg, #6f8adb, #97b9e4);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 3rem;
-  letter-spacing: -0.03em;
-  font-family: Mark Pro, sans-serif;
+  font-size: 2.5rem;
   -webkit-animation: fade-down 1s linear;
           animation: fade-down 1s linear;
 }
@@ -64,7 +62,7 @@ h1 {
   border: 1px #74bbdc solid;
   padding: 10px 16px;
   border-radius: 7px;
-  margin-right: 20px;
+  margin-right: 14px;
   font-weight: 700;
   height: 1rem;
 }
@@ -82,7 +80,7 @@ h1 {
 
 @media (max-width: 500px) {
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
   }
 }
 @-webkit-keyframes fade-down {
@@ -472,12 +470,39 @@ input:checked ~ .links a {
 }
 
 .portfolio {
+  width: 100%;
   align-items: start;
+}
+.portfolio .title-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  -webkit-animation: fade-up-delay 1.5s;
+          animation: fade-up-delay 1.5s;
+}
+.portfolio .title-card h3 {
+  padding-bottom: 3px;
+  border-bottom: 2px lightblue solid;
+  width: 90%;
+}
+.portfolio .title-card img {
+  margin: 6px 2.6rem 0 0.5rem;
+  height: 1.4rem;
+  filter: invert(90%) sepia(13%) saturate(205%) hue-rotate(159deg) brightness(91%) contrast(89%);
+  cursor: pointer;
+  color: #c2cfd7;
+}
+.portfolio .title-card img:hover {
+  opacity: 0.7;
 }
 
 .portfolio-home {
   align-items: start;
   margin-top: 0%;
+}
+.portfolio-home h3 {
+  -webkit-animation: shine-in 1.3s ease-in;
+          animation: shine-in 1.3s ease-in;
 }
 
 .bio .socials {
@@ -487,6 +512,8 @@ input:checked ~ .links a {
   margin-top: 5px;
   padding-top: 15px;
   border-top: 2px solid #6fbbdb;
+  display: flex;
+  justify-content: center;
 }
 .bio .socials .btn {
   margin-right: 1.2rem;
@@ -501,7 +528,6 @@ input:checked ~ .links a {
   line-height: 1.7rem;
 }
 .bio h3 {
-  border-top: 2px solid #6fbbdb;
   border-bottom: 2px solid #6fbbdb;
   color: rgb(214, 214, 214);
   width: 100%;
@@ -614,6 +640,12 @@ input:checked ~ .links a {
   .bio {
     margin-top: 5%;
   }
+  .portfolio {
+    margin-top: -7%;
+  }
+  .hero {
+    margin-top: -10%;
+  }
 }
 @media (min-width: 600px) {
   .about, .resume, .portfolio, .portfolio-home, .bio {
@@ -624,6 +656,15 @@ input:checked ~ .links a {
   }
   .about ul li, .resume ul li, .portfolio ul li, .portfolio-home ul li, .bio ul li {
     padding-left: 5px;
+  }
+  .bio h3 {
+    text-align: start;
+  }
+  .bio .email {
+    transform: translate(23rem, -2.6rem);
+  }
+  .bio .socials {
+    justify-content: start;
   }
   .portfolio {
     margin-top: 0;

@@ -29,13 +29,13 @@ export default function About() {
           <li>React Native</li>
         </ul>
 
-        <h3>Other Skills</h3>
+        {/* <h3>Other Skills</h3>
 
         <ul>
           <li>Writing</li>
           <li>Editing</li>
           <li>Japanese</li>
-        </ul>
+        </ul> */}
 
         <div className="socials">
           <Link className="btn" to="/portfolio">
