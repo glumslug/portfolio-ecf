@@ -1,0 +1,96 @@
+.resume {
+  .resume-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h2 {
+    color: #add8e6;
+  }
+  img {
+    // margin: 0 1rem;
+    height: 1.3rem;
+    cursor: pointer;
+    filter: invert(76%) sepia(8%) saturate(924%) hue-rotate(149deg)
+      brightness(88%) contrast(86%);
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  overflow-y: visible;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  ul {
+    list-style-type: none;
+    // margin-left: 2rem;
+    margin-bottom: 0.3rem;
+    width: 100%;
+    padding: 14px 4px;
+    // background-color: yellow;
+
+    li {
+      // background-color: red;
+      padding: 0 1px;
+      text-align: start;
+      //   margin-top: 2px;
+      // margin-right: 0.5rem;
+      transition: 0.4s;
+      display: flex;
+      // margin-left: 5%;
+      margin-bottom: 1rem;
+      animation: sweep-in 1.3s ease-in;
+      //   font-weight: 700;
+      color: rgb(196, 196, 196);
+      // border-left: 3px solid #6fbbdb;
+
+      // padding-left: 1px;
+    }
+    li::before {
+      content: "\25F9";
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: #6fbbdb;
+    }
+  }
+}
+
+.resume-block {
+  margin-top: 1rem;
+  width: 100%;
+  .role {
+    color: rgb(109, 109, 226);
+  }
+  .title-card {
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin-bottom: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  table {
+    // z-index: 1;
+    // width: 90%;
+    padding: 0.5rem 0;
+    // background-color: green;
+    th {
+      text-align: start;
+      padding: 0.3rem 0;
+      padding-right: 1rem;
+      color: rgb(109, 109, 226);
+      //   border-bottom: 1px solid white;
+      //   background-color: blue;
+    }
+    td {
+      padding: 0.3rem 0;
+      //   border-bottom: 1px solid white;
+
+      //   background-color: red;
+    }
+  }
+}

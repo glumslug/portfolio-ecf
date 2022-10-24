@@ -1,11 +1,12 @@
 .about {
-  padding: 1rem;
+  padding: 0.3rem;
   height: 100%;
-
+  // margin-top: 55%;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   display: flex;
   flex-direction: column;
+
   h1 {
     padding: 1rem 0;
     font-size: 4em;
@@ -26,27 +27,101 @@
     color: transparent;
     animation: shine-in 2s ease-in;
   }
+}
+.resume {
+  @extend .about;
+  justify-content: start;
+  margin-top: 10%;
+}
+.portfolio {
+  @extend .about;
+  align-items: start;
+
+  // background-color: green;
+}
+
+.portfolio-home {
+  @extend .about;
+  align-items: start;
+  // background-color: red;
+  margin-top: 0%;
+}
+.bio {
+  @extend .about;
+  .socials {
+    animation: shine-in 2s ease-in;
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 15px;
+    border-top: 2px solid #6fbbdb;
+    .btn {
+      margin-right: 1.2rem;
+    }
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    animation: shine-in 2s ease-in;
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+  }
+  h3 {
+    border-top: 2px solid #6fbbdb;
+    border-bottom: 2px solid #6fbbdb;
+    color: rgb(214, 214, 214);
+    width: 100%;
+    text-align: center;
+  }
+  .title-card {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-left: 4.5rem;
+      height: 4rem;
+      border-radius: 5px;
+    }
+  }
+  .email {
+    animation: shine-in 2s ease-in;
+    color: #6fbbdb;
+    padding: 2px 5px;
+    margin-top: 10px;
+  }
   ul {
+    // background-color: green;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    list-style-type: wedges;
-    margin-left: 5rem;
-    width: 20rem;
-    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    // margin-left: 2rem;
+    // margin-bottom: 0rem;
+    width: 100%;
+    padding: 20px 4px;
+    // background-color: yellow;
 
     li {
-      //   display: flex;
-      //   justify-content: start;
-      //   align-items: start;
-      //   border: darkgray 1px solid;
-      //   padding: 0.5rem;
+      // background-color: red;
+      padding: 0 1px;
       text-align: start;
-      margin: 2px 5px;
-
+      margin-top: 5px;
+      // margin-right: 0.5rem;
       transition: 0.4s;
-
+      display: flex;
+      // margin-left: 5%;
       margin-bottom: 1rem;
       animation: sweep-in 1.3s ease-in;
+      font-weight: 700;
+      color: rgb(196, 196, 196);
+      // border-left: 3px solid #6fbbdb;
+
+      // padding-left: 1px;
+    }
+    li::before {
+      content: "\25F9";
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: #6fbbdb;
     }
   }
 }
@@ -68,11 +143,100 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (max-width: 380px) {
+  .bio {
+    margin-top: 10%;
+    width: 100%;
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      width: 95%;
+    }
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding: 0;
+      font-size: 0.9rem;
+      width: 90%;
+      margin-bottom: 0.1rem;
+      grid-template-columns: 1fr 1fr;
+      li {
+        margin-left: 1rem;
+      }
+    }
+    .socials {
+      width: 90%;
+      .btn {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        margin-right: 0.5rem;
+      }
+      img {
+        height: 1.9rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .bio {
+    margin-top: 5%;
+  }
+}
+@media (min-width: 600px) {
   .about {
     align-items: start;
     ul {
-      margin-left: 0;
+      // width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
+      li {
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .portfolio {
+    margin-top: 0;
+  }
+}
+@media (min-width: 300px) {
+  .hero {
+    img {
+      transform: translate(0, -11rem);
+    }
+  }
+}
+@media (min-width: 500px) {
+  .hero {
+    img {
+      transform: translateX(9rem);
+    }
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero {
+    img {
+      transform: none;
+    }
+  }
+}
+@media (min-width: 800px) {
+  .about {
+    // margin-top: 13%;
+    align-items: start;
+    ul {
+      // width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
+      li {
+        padding-left: 5px;
+      }
     }
   }
 }

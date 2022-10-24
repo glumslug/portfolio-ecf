@@ -6,17 +6,17 @@ const Home = () => {
   return (
     <Layout>
       <section className="hero">
+        <img src="headshot2.png" alt="" />
         <h2>Eli Ferster</h2>
         <h1>Full-Stack Developer</h1>
-        <h3>ReactJS MERN stack experienced.</h3>
         <div className="socials">
           <Link className="btn" to="/portfolio">
             Portfolio
           </Link>
-          <img src="/github.svg" alt="" />
-          <img src="/linkedin.svg" alt="" />
+          <Link className="btn" to="/bio">
+            Bio
+          </Link>
         </div>
-        {/* </div> */}
       </section>
     </Layout>
   )

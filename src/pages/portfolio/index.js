@@ -5,17 +5,20 @@ import { Link } from "gatsby"
 const Projects = () => {
   return (
     <Layout>
-      <div className="about">
+      <div className="portfolio-home">
         <h2>Portfolio</h2>
         <h3>Projects & websites I've created</h3>
 
         <div className="projects">
-          <Link to="/portfolio/reccenter">
+          <Link to="/portfolio/mernapp">
             <h4>MERN App</h4>
           </Link>
-
-          <h4>Flask App</h4>
-          <h4>Gatsby Site</h4>
+          <Link to="/portfolio/flaskapp">
+            <h4>Flask App</h4>
+          </Link>{" "}
+          <Link to="/portfolio/gatsbyapp">
+            <h4>Gatsby Site</h4>
+          </Link>
         </div>
       </div>
     </Layout>
