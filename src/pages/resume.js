@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import download from "../images/download-file.svg"
 
 const Resume = () => {
   return (
@@ -8,7 +9,7 @@ const Resume = () => {
         <div className="resume-title">
           <h2>Resume</h2>
           <a href="/eliferster-resume-2022.pdf" target="_blank">
-            <img src="/file-arrow-down-solid.svg" alt="" />
+            <img src={download} alt="" />
           </a>
         </div>
         <div className="resume-block">

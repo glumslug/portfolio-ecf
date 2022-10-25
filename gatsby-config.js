@@ -11,5 +11,7 @@ module.exports = {
     title: "Eli Ferster Web Development",
     description: "web dev portfolio",
     copyright: "This website is copyright 2022 Eli Codes",
+    image: "/site-preview.png",
+    siteUrl: "https://eliferster.com",
   },
 }
