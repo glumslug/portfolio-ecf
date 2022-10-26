@@ -22,6 +22,7 @@
     cursor: pointer;
     padding: 0.5rem 0;
     color: rgb(104, 104, 203);
+    text-align: end;
   }
   .tab {
     display: none;
@@ -32,7 +33,7 @@
     z-index: 0;
     width: 72%;
     transform: translateX(4.5rem);
-
+    border-top: 2px lightblue solid;
     h4 {
       padding-bottom: 1rem;
       color: rgb(104, 104, 203);

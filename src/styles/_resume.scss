@@ -1,23 +1,31 @@
 .resume {
+  width: 100%;
+  // background-color: #808080;
+  padding: 0;
+  margin: 0;
+  margin-top: 10%;
   .resume-title {
     width: 100%;
+
+    // background-color: green;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  h2 {
-    color: #add8e6;
-  }
-  img {
-    // margin: 0 1rem;
-    height: 1.3rem;
-    cursor: pointer;
-    filter: invert(76%) sepia(8%) saturate(924%) hue-rotate(149deg)
-      brightness(88%) contrast(86%);
-    &:hover {
-      opacity: 0.7;
+    h2 {
+      color: #add8e6;
+    }
+    img {
+      // margin: 0 1rem;
+      height: 1.3rem;
+      cursor: pointer;
+      filter: invert(76%) sepia(8%) saturate(924%) hue-rotate(149deg)
+        brightness(88%) contrast(86%);
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
+
   overflow-y: visible;
   overflow-x: hidden;
   -ms-overflow-style: none; /* Internet Explorer 10+ */

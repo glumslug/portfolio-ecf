@@ -1,7 +1,17 @@
 import { Link, graphql, useStaticQuery } from "gatsby"
-import React from "react"
+import React, { useEffect } from "react"
 
 const Navbar = () => {
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+  const handleResize = () => {
+    if (window.innerWidth > 599) {
+      document.getElementById("toggle").checked = false
+    }
+  }
+
   return (
     <>
       <nav className="navbar">

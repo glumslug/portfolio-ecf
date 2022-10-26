@@ -14,7 +14,7 @@ const Home = () => {
         <h2>Eli Ferster</h2>
         <h1>Full-Stack Developer</h1>
         <div className="socials">
-          <div className="internals">
+          {/* <div className="internals">
             <Link className="btn" to="/bio">
               Bio
             </Link>
@@ -24,7 +24,7 @@ const Home = () => {
             <Link className="btn" to="/portfolio">
               Portfolio
             </Link>
-          </div>
+          </div> */}
           <div className="externals">
             <a
               target="_blank"

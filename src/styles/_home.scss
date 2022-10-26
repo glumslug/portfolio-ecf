@@ -17,6 +17,7 @@ h1 {
   justify-content: center;
   height: 100vh;
   margin-top: 45%;
+  // margin-left: 5%;
 
   // background-color: grey;
 
@@ -73,23 +74,52 @@ h1 {
     display: flex;
   }
   img {
-    height: 2.4rem;
+    height: 2rem;
     margin-right: 20px;
-    filter: invert(87%) sepia(25%) saturate(2962%) hue-rotate(168deg)
-      brightness(93%) contrast(83%);
+    filter: invert(79%) sepia(6%) saturate(2859%) hue-rotate(181deg)
+      brightness(88%) contrast(86%);
+    color: #8bafd3;
     &:hover {
       opacity: 0.7;
     }
   }
   #email {
-    height: 2.1rem;
-    width: 2.7rem;
+    height: 1.8rem;
+    width: 2.3rem;
   }
 }
 
+@media (max-width: 450px) {
+  .hero {
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    h1 {
+      font-size: 2.1rem;
+    }
+  }
+}
+@media (max-width: 380px) {
+  .hero {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+}
+@media (max-width: 330px) {
+  .hero {
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+}
 @media (max-width: 500px) {
   h1 {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
   }
   .socials {
     flex-direction: column;
@@ -97,6 +127,12 @@ h1 {
     .internals {
       margin-bottom: 1rem;
     }
+  }
+}
+
+@media (min-width: 600px) {
+  .hero {
+    margin-left: 3%;
   }
 }
 
