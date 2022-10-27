@@ -14,31 +14,18 @@ const Home = () => {
         <h2>Eli Ferster</h2>
         <h1>Full-Stack Developer</h1>
         <div className="socials">
-          {/* <div className="internals">
-            <Link className="btn" to="/bio">
-              Bio
-            </Link>
-            <Link className="btn" to="/resume">
-              Resume
-            </Link>
-            <Link className="btn" to="/portfolio">
-              Portfolio
-            </Link>
-          </div> */}
-          <div className="externals">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/eli-ferster-5a7238141/"
-            >
-              <img src={linkedin} alt="" />
-            </a>
-            <a href="https://github.com/glumslug" target="_blank">
-              <img src={github} alt="" />
-            </a>
-            <a href="mailto:eli.c.ferster@gmail.com" target="_blank">
-              <img src={email} alt="" id="email" />
-            </a>
-          </div>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/eli-ferster-5a7238141/"
+          >
+            <img src={linkedin} alt="" />
+          </a>
+          <a href="https://github.com/glumslug" target="_blank">
+            <img src={github} alt="" />
+          </a>
+          <a href="mailto:eli.c.ferster@gmail.com" target="_blank">
+            <img src={email} alt="" id="email" />
+          </a>
         </div>
       </section>
     </Layout>

@@ -1,9 +1,13 @@
 .resume {
-  width: 100%;
+  @extend .about;
+
+  justify-content: start;
+  // width: 100%;
   // background-color: #808080;
-  padding: 0;
-  margin: 0;
-  margin-top: 10%;
+  // margin: 0;
+  // padding: 0;
+  margin: 10% 0 0 0;
+  // margin-top: 10%;
   .resume-title {
     width: 100%;
 
@@ -100,5 +104,11 @@
 
       //   background-color: red;
     }
+  }
+}
+
+@media (min-width: 600px) {
+  .resume {
+    margin: 10% 5% 0 5%;
   }
 }

@@ -38,54 +38,27 @@ h1 {
   }
   .socials {
     animation: fade-up-delay 2s;
-  }
-}
-.socials {
-  // background-color: green;
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  margin-left: 1px;
-  .externals {
     display: flex;
     align-items: center;
-    margin-left: 1px;
-  }
-  .internals {
-    display: flex;
-  }
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px #74bbdc solid;
-    // min-width: 4rem;
-    padding: 10px 16px;
-    border-radius: 7px;
-    // margin-top: 20px;
-    margin-right: 14px;
-    font-weight: 700;
-    height: 1rem;
-    &:hover {
-      opacity: 0.7;
+    margin-top: 0.6rem;
+    margin-left: 3px;
+    a {
+      display: flex;
     }
-  }
-  a {
-    display: flex;
-  }
-  img {
-    height: 2rem;
-    margin-right: 20px;
-    filter: invert(79%) sepia(6%) saturate(2859%) hue-rotate(181deg)
-      brightness(88%) contrast(86%);
-    color: #8bafd3;
-    &:hover {
-      opacity: 0.7;
+    img {
+      height: 2rem;
+      margin-right: 15px;
+      filter: invert(79%) sepia(6%) saturate(2859%) hue-rotate(181deg)
+        brightness(88%) contrast(86%);
+      color: #8bafd3;
+      &:hover {
+        opacity: 0.7;
+      }
     }
-  }
-  #email {
-    height: 1.8rem;
-    width: 2.3rem;
+    #email {
+      height: 1.8rem;
+      width: 2.3rem;
+    }
   }
 }
 
@@ -122,8 +95,6 @@ h1 {
     font-size: 2.5rem;
   }
   .socials {
-    flex-direction: column;
-    align-items: start;
     .internals {
       margin-bottom: 1rem;
     }

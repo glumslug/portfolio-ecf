@@ -7,7 +7,15 @@
   width: 2rem;
   flex-direction: column;
   justify-content: start;
-
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   height: 20rem;
+  //   transform: translate(2.8rem, -7rem);
+  //   // width: 2px;
+  //   // background-color: red;
+  //   border-left: 4px solid $leftbar;
+  // }
   input {
     display: none;
   }

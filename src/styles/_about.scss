@@ -35,12 +35,7 @@
     animation: shine-in 2s ease-in;
   }
 }
-.resume {
-  @extend .about;
 
-  justify-content: start;
-  margin-top: 10%;
-}
 .portfolio {
   @extend .about;
   width: 100%;
@@ -76,6 +71,7 @@
 .portfolio-home {
   @extend .about;
   width: 100%;
+
   align-items: start;
   // background-color: red;
   margin-top: 0%;
@@ -114,7 +110,7 @@
     .left-sub {
       // background-color: green;
       animation: fade-in 2s;
-      border-left: 3px $left solid;
+      border-left: 3px $leftbar solid;
       padding: 0 2%;
     }
   }
@@ -124,7 +120,7 @@
       // background-color: #c2cfd7;
       display: flex;
       flex-direction: column;
-      border-left: 3px $left solid;
+      border-left: 3px $leftbar solid;
       padding-left: 2%;
       animation: fade-in 2s;
       p {

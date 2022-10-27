@@ -38,49 +38,24 @@ h1 {
 .hero .socials {
   -webkit-animation: fade-up-delay 2s;
           animation: fade-up-delay 2s;
-}
-
-.socials {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
-  margin-left: 1px;
+  margin-top: 0.6rem;
+  margin-left: 3px;
 }
-.socials .externals {
-  display: flex;
-  align-items: center;
-  margin-left: 1px;
-}
-.socials .internals {
+.hero .socials a {
   display: flex;
 }
-.socials .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px #74bbdc solid;
-  padding: 10px 16px;
-  border-radius: 7px;
-  margin-right: 14px;
-  font-weight: 700;
-  height: 1rem;
-}
-.socials .btn:hover {
-  opacity: 0.7;
-}
-.socials a {
-  display: flex;
-}
-.socials img {
+.hero .socials img {
   height: 2rem;
-  margin-right: 20px;
+  margin-right: 15px;
   filter: invert(79%) sepia(6%) saturate(2859%) hue-rotate(181deg) brightness(88%) contrast(86%);
   color: #8bafd3;
 }
-.socials img:hover {
+.hero .socials img:hover {
   opacity: 0.7;
 }
-.socials #email {
+.hero .socials #email {
   height: 1.8rem;
   width: 2.3rem;
 }
@@ -108,10 +83,6 @@ h1 {
 @media (max-width: 500px) {
   h1 {
     font-size: 2.5rem;
-  }
-  .socials {
-    flex-direction: column;
-    align-items: start;
   }
   .socials .internals {
     margin-bottom: 1rem;
@@ -477,7 +448,7 @@ input:checked ~ .links a {
     opacity: 1;
   }
 }
-.about, .bio, .portfolio-home, .portfolio, .resume {
+.about, .resume, .bio, .portfolio-home, .portfolio {
   padding: 0.3rem;
   height: 100%;
   justify-content: center;
@@ -490,23 +461,23 @@ input:checked ~ .links a {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
-.about::-webkit-scrollbar, .bio::-webkit-scrollbar, .portfolio-home::-webkit-scrollbar, .portfolio::-webkit-scrollbar, .resume::-webkit-scrollbar {
+.about::-webkit-scrollbar, .resume::-webkit-scrollbar, .bio::-webkit-scrollbar, .portfolio-home::-webkit-scrollbar, .portfolio::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
-.about h1, .bio h1, .portfolio-home h1, .portfolio h1, .resume h1 {
+.about h1, .resume h1, .bio h1, .portfolio-home h1, .portfolio h1 {
   padding: 1rem 0;
   font-size: 4em;
   color: #99ff99;
   -webkit-animation: fade-down 1s linear;
           animation: fade-down 1s linear;
 }
-.about h2, .bio h2, .portfolio-home h2, .portfolio h2, .resume h2 {
+.about h2, .resume h2, .bio h2, .portfolio-home h2, .portfolio h2 {
   text-align: start;
   padding: 1rem 0;
   -webkit-animation: shine-in 1s ease-in;
           animation: shine-in 1s ease-in;
 }
-.about h3, .bio h3, .portfolio-home h3, .portfolio h3, .resume h3 {
+.about h3, .resume h3, .bio h3, .portfolio-home h3, .portfolio h3 {
   font-size: 1.3rem;
   background: linear-gradient(90deg, transparent, white 0%);
   background-repeat: no-repeat;
@@ -516,11 +487,6 @@ input:checked ~ .links a {
   color: transparent;
   -webkit-animation: shine-in 2s ease-in;
           animation: shine-in 2s ease-in;
-}
-
-.resume {
-  justify-content: start;
-  margin-top: 10%;
 }
 
 .portfolio {
@@ -788,10 +754,8 @@ input:checked ~ .links a {
   }
 }
 .resume {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  margin-top: 10%;
+  justify-content: start;
+  margin: 10% 0 0 0;
   overflow-y: visible;
   overflow-x: hidden;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -867,6 +831,11 @@ input:checked ~ .links a {
   padding: 0.3rem 0;
 }
 
+@media (min-width: 600px) {
+  .resume {
+    margin: 10% 5% 0 5%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
