@@ -90,6 +90,9 @@ h1 {
   }
 }
 @media (min-width: 600px) {
+  .layout {
+    padding: 0 1rem;
+  }
   .hero {
     margin-left: 3%;
   }
@@ -249,59 +252,45 @@ h1 {
   opacity: 0.7;
 }
 
+.portfolio-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 10%;
+}
+.portfolio-title h1 {
+  background-color: red;
+}
+
 .projects {
   display: flex;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-.projects .proj {
-  outline: 1px solid white;
-  padding: 10px;
-  margin: 10px 10px 10px 0;
-  border-radius: 10px;
-  display: flex;
+  width: 100%;
+  margin-top: 2.2rem;
   flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-}
-.projects .proj:hover {
-  outline: 1px solid rgb(162, 130, 238);
-}
-.projects .modal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 5;
-  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-.projects .modal .modal-bkg {
-  background-color: rgba(128, 128, 128, 0.374);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  cursor: pointer;
-}
-.projects .project-modal {
-  z-index: 10;
-  -webkit-animation: scale-up 0.5s;
-          animation: scale-up 0.5s;
-  outline: 1px solid white;
-  padding: 10px 10px 12px 10px;
-  margin: 10px;
-  border-radius: 10px;
+.projects .project-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 1rem;
+  background-color: black;
+  padding: 10px;
+  border: 1px rgb(90, 123, 177) solid;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.projects .project-card .title-card {
+  display: flex;
+  width: 100%;
   align-items: center;
-  background-color: #10101a;
+  justify-content: center;
 }
-.projects .project-modal:hover {
-  outline: 1px solid rgb(162, 130, 238);
-}
-.projects .project-modal h4 {
+.projects .project-card .title-card h4 {
   font-size: 1.5rem;
   font-family: "Play";
   padding-bottom: 1rem;
@@ -311,80 +300,29 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.projects .project-modal h4:hover {
-  background-image: linear-gradient(90deg, rgb(130, 197, 238), white);
+.projects .project-card #recc {
+  height: 16rem;
 }
-.projects .title-card {
+.projects .project-card #note {
+  height: 16rem;
+}
+.projects .project-card #gats {
+  height: 9rem;
+}
+.projects .project-card ul {
   display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
-.projects .title-card .btn {
-  padding: 5px;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  height: 1rem;
-  font-weight: bold;
-  border: 1px #cecece solid;
-  color: #cecece;
-  border-bottom: none;
-  border-radius: 3px 3px 0 0;
-  cursor: pointer;
-}
-.projects .title-card .btn:hover {
-  background-color: #cecece;
-  color: black;
-}
-.projects .details {
-  margin: 1rem 5px;
-  display: flex;
-  width: 22rem;
-  height: 18rem;
-  justify-content: start;
-}
-.projects .details .project {
-  margin: 0;
-  align-items: start;
-}
-.projects .details .project .tab {
-  transform: translateX(3.8rem);
-  width: 18rem;
-  border: none;
-}
-.projects .preview {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-}
-.projects .preview img {
-  height: 22rem;
-  border-radius: 10px;
-}
-.projects .preview #recc {
-  height: 17rem;
-}
-.projects .preview #note {
-  height: 14rem;
-}
-.projects .preview #gats {
-  height: 8.5rem;
-}
-.projects ul {
-  display: flex;
   list-style-type: none;
 }
-.projects ul li {
+.projects .project-card ul li {
   padding: 10px 5px;
 }
-.projects ul li img {
+.projects .project-card ul li img {
   height: 3rem;
   width: auto;
   transition: 0.3s;
 }
-.projects ul li img:hover {
+.projects .project-card ul li img:hover {
   transform: translateY(-0.5rem);
 }
 
@@ -406,30 +344,45 @@ h1 {
   }
 }
 @media (min-width: 600px) {
-  .project .tab {
-    width: 75%;
+  .portfolio-home {
+    align-items: start;
+    justify-content: start;
   }
-  .projects .contents #recc {
-    height: 16rem;
+  .projects {
+    margin-left: 10%;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
   }
-  .projects .contents #note {
-    height: 20rem;
+  .projects .project-card {
+    width: auto;
+    height: 24rem;
+    margin-right: 2rem;
   }
-  .projects .contents #gats {
-    height: 8rem;
+  .projects .project-card:hover {
+    transform: translateY(-2rem);
+  }
+  .projects #recc {
+    height: 6rem;
+  }
+  .projects #note {
+    height: 6rem;
+  }
+  .projects #gats {
+    height: 6rem;
   }
 }
 @media (min-width: 800px) {
   .project .tab {
     width: 65%;
   }
-  .projects .contents #recc {
+  .projects #recc {
     height: 18rem;
   }
-  .projects .contents #note {
+  .projects #note {
     height: 22rem;
   }
-  .projects .contents #gats {
+  .projects #gats {
     height: 8rem;
   }
 }
@@ -437,13 +390,13 @@ h1 {
   .project .tab {
     width: 65%;
   }
-  .projects .contents #recc {
+  .projects #recc {
     height: 22rem;
   }
-  .projects .contents #note {
+  .projects #note {
     height: 26rem;
   }
-  .projects .contents #gats {
+  .projects #gats {
     height: 12rem;
   }
 }
@@ -634,7 +587,6 @@ input:checked ~ .links a {
 }
 .about h1, .resume h1, .bio h1, .portfolio-home h1, .portfolio h1 {
   padding: 1rem 0;
-  font-size: 4em;
   color: #99ff99;
   -webkit-animation: fade-down 1s linear;
           animation: fade-down 1s linear;
@@ -682,8 +634,11 @@ input:checked ~ .links a {
 
 .portfolio-home {
   width: 100%;
-  align-items: start;
-  margin-top: 0%;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 12%;
 }
 .portfolio-home h3 {
   -webkit-animation: shine-in 1.3s ease-in;
@@ -1024,7 +979,6 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
   align-items: center;
 }
 .layout .content {

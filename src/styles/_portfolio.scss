@@ -1,21 +1,11 @@
 .project {
   margin: 10px 2px;
-
   animation: fade-in 3s;
   display: flex;
   flex-wrap: wrap;
   width: 2rem;
   flex-direction: column;
   justify-content: start;
-  // &:before {
-  //   content: "";
-  //   position: absolute;
-  //   height: 20rem;
-  //   transform: translate(2.8rem, -7rem);
-  //   // width: 2px;
-  //   // background-color: red;
-  //   border-left: 4px solid $leftbar;
-  // }
   input {
     display: none;
   }
@@ -68,162 +58,81 @@
     }
   }
 }
-
+.portfolio-title {
+  display: flex;
+  flex-direction: column;
+  // background-color: green;
+  width: 100%;
+  margin-left: 10%;
+  h1 {
+    background-color: red;
+  }
+}
 .projects {
   display: flex;
-  margin-top: 1rem;
+  width: 100%;
+  margin-top: 2.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: red;
   // margin-bottom: 4rem;
   flex-wrap: wrap;
-  .proj {
-    outline: 1px solid white;
-    padding: 10px;
-    margin: 10px 10px 10px 0;
-    border-radius: 10px;
+  .project-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    cursor: pointer;
-    &:hover {
-      outline: 1px solid rgb(162, 130, 238);
-    }
-  }
-  .modal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .modal-bkg {
-      background-color: rgba(128, 128, 128, 0.374);
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      cursor: pointer;
-    }
-  }
-  .project-modal {
-    z-index: 10;
-    animation: scale-up 0.5s;
-    // width: 50vw;
-    outline: 1px solid white;
-    padding: 10px 10px 12px 10px;
-    margin: 10px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $bodybkg;
-
-    // width: 40%;
-    // height: 40%;
-    // position: absolute;
-    // transition: 1s;
-    // transition: height 0.5s;
-    // -webkit-transition: height 0.5s;
-    &:hover {
-      outline: 1px solid rgb(162, 130, 238);
-    }
-    h4 {
-      font-size: 1.5rem;
-      font-family: "Play";
-      padding-bottom: 1rem;
-      background-image: linear-gradient(90deg, rgb(162, 130, 238), #c8b8f9);
-      background-clip: text;
-      background-size: 300%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      &:hover {
-        background-image: linear-gradient(90deg, rgb(130, 197, 238), white);
-      }
-    }
-  }
-  .title-card {
-    display: flex;
-    width: 100%;
-    align-items: center;
     justify-content: space-between;
-
-    .btn {
-      padding: 5px;
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      height: 1rem;
-      font-weight: bold;
-      border: 1px #cecece solid;
-      color: #cecece;
-      border-bottom: none;
-      border-radius: 3px 3px 0 0;
-      // background-color: rgb(87, 80, 80);
-      // transform: translateX(10rem);
-      // position: absolute;
-      cursor: pointer;
-      &:hover {
-        background-color: #cecece;
-        color: black;
+    margin: 0;
+    margin-bottom: 1rem;
+    // width: 92%;
+    background-color: black;
+    padding: 10px;
+    border: 1px rgb(90, 123, 177) solid;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+    }
+    .title-card {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      h4 {
+        font-size: 1.5rem;
+        font-family: "Play";
+        padding-bottom: 1rem;
+        background-image: linear-gradient(90deg, rgb(162, 130, 238), #c8b8f9);
+        background-clip: text;
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
-  }
 
-  .details {
-    margin: 1rem 5px;
-    display: flex;
-    width: 22rem;
-    height: 18rem;
-    justify-content: start;
-
-    .project {
-      margin: 0;
-      align-items: start;
-      .tab {
-        transform: translateX(3.8rem);
-        width: 18rem;
-        border: none;
-      }
-    }
-  }
-  .preview {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // background-color: red;
-    transition: 0.4s;
-
-    img {
-      // height: 16rem;
-      height: 22rem;
-      border-radius: 10px;
-      // padding: 2rem 0;
-    }
     #recc {
-      height: 17rem;
+      height: 16rem;
     }
     #note {
-      height: 14rem;
+      height: 16rem;
     }
     #gats {
-      height: 8.5rem;
+      height: 9rem;
     }
-  }
-  ul {
-    display: flex;
 
-    list-style-type: none;
-    li {
-      padding: 10px 5px;
-      img {
-        height: 3rem;
-        width: auto;
-        transition: 0.3s;
-        &:hover {
-          transform: translateY(-0.5rem);
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      li {
+        padding: 10px 5px;
+        img {
+          height: 3rem;
+          width: auto;
+          transition: 0.3s;
+          &:hover {
+            transform: translateY(-0.5rem);
+          }
         }
       }
     }
@@ -243,22 +152,37 @@
 }
 
 @media (min-width: 600px) {
-  .project {
-    // margin-left: -3%;
-    // margin-bottom: 5rem;
-    .tab {
-      width: 75%;
-    }
+  .portfolio-home {
+    align-items: start;
+    // background-color: green;
+    justify-content: start;
   }
-  .projects .contents {
+
+  .projects {
+    margin-left: 10%;
+    // width: 90%;
+
+    // width: auto;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    // background-color: grey;
+    .project-card {
+      width: auto;
+      height: 24rem;
+      margin-right: 2rem;
+      &:hover {
+        transform: translateY(-2rem);
+      }
+    }
     #recc {
-      height: 16rem;
+      height: 6rem;
     }
     #note {
-      height: 20rem;
+      height: 6rem;
     }
     #gats {
-      height: 8rem;
+      height: 6rem;
     }
   }
 }
@@ -271,7 +195,7 @@
       width: 65%;
     }
   }
-  .projects .contents {
+  .projects {
     #recc {
       height: 18rem;
     }
@@ -292,7 +216,7 @@
       width: 65%;
     }
   }
-  .projects .contents {
+  .projects {
     #recc {
       height: 22rem;
     }

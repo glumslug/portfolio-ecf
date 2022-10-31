@@ -1,0 +1,56 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal-bkg {
+    background-color: rgba(128, 128, 128, 0.374);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+.modal-content {
+  z-index: 10;
+  animation: scale-up 0.5s;
+  // width: 50vw;
+  outline: 1px solid white;
+  padding: 10px 10px 12px 10px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bodybkg;
+
+  // width: 40%;
+  // height: 40%;
+  // position: absolute;
+  // transition: 1s;
+  // transition: height 0.5s;
+  // -webkit-transition: height 0.5s;
+  &:hover {
+    outline: 1px solid rgb(162, 130, 238);
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-family: "Play";
+    padding-bottom: 1rem;
+    background-image: linear-gradient(90deg, rgb(162, 130, 238), #c8b8f9);
+    background-clip: text;
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+      background-image: linear-gradient(90deg, rgb(130, 197, 238), white);
+    }
+  }
+}
