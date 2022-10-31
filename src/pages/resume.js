@@ -7,7 +7,7 @@ const Resume = () => {
     <Layout>
       <div className="resume">
         <div className="resume-title">
-          <h2>Resume</h2>
+          <h1>Resume</h1>
           <a href="/eliferster-resume-2022.pdf" target="_blank">
             <img src={download} alt="" />
           </a>
@@ -53,7 +53,10 @@ const Resume = () => {
         </div>
         <div className="resume-block">
           <div className="title-card">
-            <h4>Astor & Sanders Corporation, Rockville, MD, USA </h4>
+            <h4>
+              Astor & Sanders Corporation <br />{" "}
+              <span className="grey">Rockville, MD, USA</span>{" "}
+            </h4>
             <h4>Jul. 2021 - Present</h4>
           </div>
           <h4 className="role">Role: Writer/Editor </h4>
@@ -81,7 +84,10 @@ const Resume = () => {
         </div>
         <div className="resume-block">
           <div className="title-card">
-            <h4>AJET Connect Magazine, Remote, Japan </h4>
+            <h4>
+              AJET Connect Magazine <br />{" "}
+              <span className="grey">Remote, Japan</span>
+            </h4>
             <h4>Oct. 2019 – Jul. 2020</h4>
           </div>
           <h4 className="role">Role: General Section Editor (volunteer) </h4>
@@ -98,7 +104,10 @@ const Resume = () => {
         </div>
         <div className="resume-block">
           <div className="title-card">
-            <h4>Japanese Exchange and Teaching (JET) Program, Kyoto, Japan</h4>
+            <h4>
+              Japanese Exchange and Teaching (JET) Program <br />
+              <span className="grey">Kyoto, Japan</span>
+            </h4>
             <h4>Sept. 2018 – Sept. 2020</h4>
           </div>
           <h4 className="role">Role: Assistant Language Teacher </h4>
@@ -117,7 +126,10 @@ const Resume = () => {
         </div>
         <div className="resume-block">
           <div className="title-card">
-            <h4>Thinktown Education Inc., Remote, USA</h4>
+            <h4>
+              Thinktown Education Inc. <br />
+              <span className="grey">Remote, USA</span>
+            </h4>
             <h4>Jul. 2017 – Jul. 2018</h4>
           </div>
           <h4 className="role">Role: Writing Specialist </h4>

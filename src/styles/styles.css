@@ -1,11 +1,14 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Play");
 h1 {
   background-image: linear-gradient(90deg, #6f8adb, #97b9e4);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.8rem;
+  font-size: 3rem;
+  letter-spacing: 0.03em;
+  font-family: "Play";
   -webkit-animation: fade-down 1s linear;
           animation: fade-down 1s linear;
 }
@@ -60,6 +63,17 @@ h1 {
   width: 2.3rem;
 }
 
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .socials .internals {
+    margin-bottom: 1rem;
+  }
+}
 @media (max-width: 450px) {
   .hero h1 {
     font-size: 2.2rem;
@@ -67,25 +81,17 @@ h1 {
 }
 @media (max-width: 400px) {
   .hero h1 {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 @media (max-width: 380px) {
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 350px) {
   .hero h1 {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 500px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  .socials .internals {
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 600px) {
@@ -466,7 +472,7 @@ input:checked ~ .links a {
 }
 .about h1, .resume h1, .bio h1, .portfolio-home h1, .portfolio h1 {
   padding: 1rem 0;
-  font-size: 4em;
+  font-size: 2.5em;
   color: #99ff99;
   -webkit-animation: fade-down 1s linear;
           animation: fade-down 1s linear;
@@ -491,8 +497,9 @@ input:checked ~ .links a {
 
 .portfolio {
   width: 100%;
+  height: 100vh;
   align-items: start;
-  transform: translateX(-8px);
+  transform: translate(-8px, -0.2rem);
 }
 .portfolio .title-card {
   display: flex;
@@ -514,6 +521,7 @@ input:checked ~ .links a {
 
 .portfolio-home {
   width: 100%;
+  transform: translateY(-1rem);
   align-items: start;
   margin-top: 0%;
 }
@@ -526,6 +534,7 @@ input:checked ~ .links a {
   width: 100%;
   height: 100vh;
   align-items: start;
+  margin-left: 2%;
 }
 .bio .bio-grid {
   display: flex;
@@ -534,7 +543,6 @@ input:checked ~ .links a {
 }
 .bio h1 {
   font-size: 2.5em;
-  padding-left: 2%;
 }
 .bio p {
   -webkit-animation: shine-in 2s ease-in;
@@ -549,44 +557,49 @@ input:checked ~ .links a {
   -webkit-animation: fade-in 2s;
           animation: fade-in 2s;
   border-left: 3px rgb(197, 190, 0) solid;
-  padding: 0 2%;
+  padding: 0 3%;
+}
+.bio .right {
+  min-width: 30%;
 }
 .bio .right .right-sub {
   display: flex;
   flex-direction: column;
   border-left: 3px rgb(197, 190, 0) solid;
-  padding-left: 2%;
+  padding-left: 3%;
   -webkit-animation: fade-in 2s;
           animation: fade-in 2s;
 }
 .bio .right .right-sub p {
-  margin-left: 0.5rem;
   margin-bottom: 0;
 }
 .bio ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style-type: none;
-  padding: 2px 4px;
+  padding-top: 1rem;
   width: 100%;
-  margin-top: -1rem;
+  margin-top: -1.2rem;
+}
+.bio ul img {
+  height: 3rem;
+  width: auto;
+  transition: 0.3s;
+}
+.bio ul img:hover {
+  transform: translateY(-0.5rem);
 }
 .bio ul li {
   text-align: start;
   margin-top: 5px;
+  margin-left: -5%;
   transition: 0.4s;
   display: flex;
-  padding-top: 2rem;
+  padding: 1rem;
   -webkit-animation: sweep-in 1.3s ease-in;
           animation: sweep-in 1.3s ease-in;
   font-weight: 700;
   color: rgb(196, 196, 196);
-}
-.bio ul li::before {
-  content: "◹";
-  display: inline-block;
-  margin-right: 0.5rem;
-  color: #6fbbdb;
 }
 
 @counter-style wedges {
@@ -611,46 +624,18 @@ input:checked ~ .links a {
     opacity: 1;
   }
 }
-@media (max-width: 380px) {
-  .bio {
-    width: 100%;
-  }
-  .bio .bio-grid {
-    padding-top: 40%;
-  }
-  .bio .bio-grid h1 {
-    font-size: 2em;
-  }
-  .bio .bio-grid p {
-    font-size: 0.9rem;
-    width: 95%;
-  }
-  .bio .bio-grid h3 {
-    font-size: 1.1rem;
-  }
-  .bio .bio-grid .right ul {
-    padding: 0;
-    font-size: 0.9rem;
-    width: 90%;
-    margin-bottom: 0.1rem;
-    grid-template-columns: 1fr 1fr;
-  }
-  .bio .bio-grid .right ul li {
-    margin-left: 1rem;
-  }
-}
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .bio .left {
-    width: 50%;
+    width: 55%;
   }
   .bio .right {
     width: 43%;
   }
   .bio ul {
-    width: 100%;
+    width: 90%;
   }
   .bio ul li {
-    padding-top: 2.2rem;
+    margin-top: 2vw;
   }
 }
 @media (max-width: 800px) {
@@ -674,8 +659,8 @@ input:checked ~ .links a {
   .bio .bio-grid .right {
     width: 100%;
   }
-  .bio .bio-grid .right ul {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  .bio .bio-grid ul {
+    width: 100%;
   }
 }
 @media (max-width: 700px) {
@@ -694,7 +679,6 @@ input:checked ~ .links a {
   }
   .bio .bio-grid .right ul {
     margin-left: 3%;
-    grid-template-columns: 0.8fr 0.9fr 1.1fr;
   }
   .portfolio {
     margin-top: -7%;
@@ -706,16 +690,18 @@ input:checked ~ .links a {
 @media (max-width: 400px) {
   .bio .bio-grid .right ul {
     margin-left: 0;
-    grid-template-columns: 30% 31% 39%;
   }
   .portfolio {
-    margin-top: -7%;
+    margin-top: -20%;
   }
   .hero {
     margin-top: -10%;
   }
 }
 @media (max-width: 380px) {
+  .portfolio {
+    margin-top: -20%;
+  }
   .portfolio-home h3 {
     font-size: 1.2rem;
   }
@@ -725,7 +711,8 @@ input:checked ~ .links a {
   }
   .bio .bio-grid .right ul {
     width: 100%;
-    margin-left: -5%;
+    margin-left: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .bio .bio-grid .right ul li {
     padding-right: 0;
@@ -733,6 +720,9 @@ input:checked ~ .links a {
   }
 }
 @media (max-width: 350px) {
+  .portfolio {
+    margin-top: -30%;
+  }
   .portfolio-home h3 {
     font-size: 1.1rem;
   }
@@ -745,7 +735,6 @@ input:checked ~ .links a {
   }
   .bio .bio-grid .right ul {
     margin-left: 2%;
-    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 500px) {
@@ -818,6 +807,11 @@ input:checked ~ .links a {
   display: flex;
   justify-content: space-between;
 }
+.resume-block .grey {
+  color: rgb(196, 196, 196);
+  font-weight: 100;
+  display: none;
+}
 .resume-block table {
   padding: 0.5rem 0;
 }
@@ -834,6 +828,9 @@ input:checked ~ .links a {
 @media (min-width: 600px) {
   .resume {
     margin: 10% 5% 0 5%;
+  }
+  .resume .grey {
+    display: block;
   }
 }
 * {

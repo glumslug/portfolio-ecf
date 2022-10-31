@@ -16,7 +16,7 @@ const Reccenter = () => {
           <Link to="/portfolio">
             <img src={back} alt="" />
           </Link>
-          <h3>Rec Center MERN App </h3>
+          <h3>Rec Center React App </h3>
         </div>
 
         <div className="project">
@@ -27,8 +27,8 @@ const Reccenter = () => {
               Rec Center is a social-scheduling app for pick-up basketball.{" "}
             </p>
             <p>
-              The app allows you to create a schedule of availability, and then
-              automatically aggregates your availability with your friends'
+              The app allows you to set your availability via a schedule, and
+              then automatically aggregates your availability with your friends'
               availability for each group you join.
             </p>
 

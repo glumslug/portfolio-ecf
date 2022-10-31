@@ -85,10 +85,16 @@
     display: flex;
     justify-content: space-between;
   }
+  .grey {
+    color: rgb(196, 196, 196);
+    font-weight: 100;
+    display: none;
+  }
   table {
     // z-index: 1;
     // width: 90%;
     padding: 0.5rem 0;
+
     // background-color: green;
     th {
       text-align: start;
@@ -110,5 +116,8 @@
 @media (min-width: 600px) {
   .resume {
     margin: 10% 5% 0 5%;
+    .grey {
+      display: block;
+    }
   }
 }

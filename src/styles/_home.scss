@@ -3,9 +3,9 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.8rem;
-  // letter-spacing: 0.03em;
-  // font-family: Mark Pro, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.03em;
+  font-family: "Play";
   animation: fade-down 1s linear;
 }
 .hero {
@@ -61,7 +61,22 @@ h1 {
     }
   }
 }
+@media (max-width: 500px) {
+  .hero {
+    h1 {
+      font-size: 2.6rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
 
+  .socials {
+    .internals {
+      margin-bottom: 1rem;
+    }
+  }
+}
 @media (max-width: 450px) {
   .hero {
     h1 {
@@ -72,31 +87,21 @@ h1 {
 @media (max-width: 400px) {
   .hero {
     h1 {
-      font-size: 2.1rem;
+      font-size: 2.2rem;
     }
   }
 }
 @media (max-width: 380px) {
   .hero {
     h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 350px) {
   .hero {
     h1 {
-      font-size: 1.6rem;
-    }
-  }
-}
-@media (max-width: 500px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  .socials {
-    .internals {
-      margin-bottom: 1rem;
+      font-size: 1.8rem;
     }
   }
 }

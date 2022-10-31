@@ -97,6 +97,10 @@
         visibility: hidden;
         opacity: 0;
         font-size: 2rem;
+        &:hover {
+        }
+        &:active {
+        }
       }
     }
   }

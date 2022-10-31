@@ -6,12 +6,12 @@ const Projects = () => {
   return (
     <Layout>
       <div className="portfolio-home">
-        <h2>Portfolio</h2>
+        <h1>Portfolio</h1>
         <h3>Projects & websites I've created</h3>
 
         <div className="projects">
-          <Link to="/portfolio/mernapp">
-            <h4>MERN App</h4>
+          <Link to="/portfolio/reactapp">
+            <h4>React App</h4>
           </Link>
           <Link to="/portfolio/flaskapp">
             <h4>Flask App</h4>

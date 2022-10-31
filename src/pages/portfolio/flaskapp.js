@@ -57,10 +57,12 @@ const FlaskApp = () => {
             </p>
             <p>
               This was the first major application I created, and the
-              functionality and design are consequently very basic. This was a
-              learning experience for me, and laid the foundation for me to
-              start learning high level frameworks and tackling more complex
-              projects.
+              functionality and design are consequently very basic.
+            </p>
+            <p>
+              This was a major learning experience for me, and laid the
+              foundation for me to start learning high level frameworks and
+              tackling more complex projects.
             </p>
             {cta}
           </div>
