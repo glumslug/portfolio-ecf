@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Play");
 h1 {
   background-image: linear-gradient(90deg, #6f8adb, #97b9e4);
   background-clip: text;
@@ -276,53 +277,115 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(128, 128, 128, 0.374);
 }
-.projects a {
+.projects .modal .modal-bkg {
+  background-color: rgba(128, 128, 128, 0.374);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.projects .project-modal {
+  z-index: 10;
   -webkit-animation: scale-up 0.5s;
           animation: scale-up 0.5s;
   outline: 1px solid white;
   padding: 10px 10px 12px 10px;
-  margin: 10px 10px 10px 0;
+  margin: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #10101a;
-  cursor: pointer;
-  transition: 1s;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
 }
-.projects a:hover {
+.projects .project-modal:hover {
   outline: 1px solid rgb(162, 130, 238);
 }
-.projects a h4 {
-  margin-bottom: 1rem;
-  color: rgb(162, 130, 238);
-  text-align: center;
+.projects .project-modal h4 {
+  font-size: 1.5rem;
+  font-family: "Play";
+  padding-bottom: 1rem;
+  background-image: linear-gradient(90deg, rgb(162, 130, 238), #c8b8f9);
+  background-clip: text;
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.projects .contents {
+.projects .project-modal h4:hover {
+  background-image: linear-gradient(90deg, rgb(130, 197, 238), white);
+}
+.projects .title-card {
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects .title-card .btn {
+  padding: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  height: 1rem;
+  font-weight: bold;
+  border: 1px #cecece solid;
+  color: #cecece;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  cursor: pointer;
+}
+.projects .title-card .btn:hover {
+  background-color: #cecece;
+  color: black;
+}
+.projects .details {
+  margin: 1rem 5px;
+  display: flex;
+  width: 22rem;
+  height: 18rem;
+  justify-content: start;
+}
+.projects .details .project {
+  margin: 0;
+  align-items: start;
+}
+.projects .details .project .tab {
+  transform: translateX(3.8rem);
+  width: 18rem;
+  border: none;
+}
+.projects .preview {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
 }
-.projects .contents ul {
+.projects .preview img {
+  height: 22rem;
+  border-radius: 10px;
+}
+.projects .preview #recc {
+  height: 17rem;
+}
+.projects .preview #note {
+  height: 14rem;
+}
+.projects .preview #gats {
+  height: 8.5rem;
+}
+.projects ul {
+  display: flex;
   list-style-type: none;
 }
-.projects .contents ul li {
-  padding: 10px;
+.projects ul li {
+  padding: 10px 5px;
 }
-.projects .contents ul li::before {
-  content: "◹";
-  display: inline-block;
-  margin-right: 0.5rem;
-  color: #6fbbdb;
+.projects ul li img {
+  height: 3rem;
+  width: auto;
+  transition: 0.3s;
 }
-.projects .contents img {
-  height: 26rem;
-  border-radius: 10px;
+.projects ul li img:hover {
+  transform: translateY(-0.5rem);
 }
 
 @-webkit-keyframes scale-up {
@@ -346,15 +409,42 @@ h1 {
   .project .tab {
     width: 75%;
   }
+  .projects .contents #recc {
+    height: 16rem;
+  }
+  .projects .contents #note {
+    height: 20rem;
+  }
+  .projects .contents #gats {
+    height: 8rem;
+  }
 }
 @media (min-width: 800px) {
   .project .tab {
     width: 65%;
   }
+  .projects .contents #recc {
+    height: 18rem;
+  }
+  .projects .contents #note {
+    height: 22rem;
+  }
+  .projects .contents #gats {
+    height: 8rem;
+  }
 }
 @media (min-width: 1000px) {
   .project .tab {
     width: 65%;
+  }
+  .projects .contents #recc {
+    height: 22rem;
+  }
+  .projects .contents #note {
+    height: 26rem;
+  }
+  .projects .contents #gats {
+    height: 12rem;
   }
 }
 .navbar {
@@ -930,7 +1020,6 @@ body {
 }
 
 .layout {
-  max-width: 1200px;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -947,12 +1036,14 @@ body {
   justify-content: start;
   overflow: hidden;
 }
-
-footer {
+.layout footer {
+  width: 100vw;
+  margin: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-footer p {
+.layout footer p {
   font-size: 16px;
   text-align: center;
   color: rgba(170, 170, 170, 0.646);
